@@ -1,0 +1,28 @@
+@baseUrl = http://localhost:8000
+@username = admin
+@password = admin123
+// This is a sample HTTP request file for testing the API endpoints of a web application.
+
+// You can use this file with REST clients like Postman or Insomnia to test the API endpoints.
+// The requests are organized by HTTP method and endpoint for better readability.
+
+
+### test api 
+GET "http://localhost:8000"
+
+
+### signup
+POST {{@baseUrl}}/api/signup
+{
+  "username": "{{username}}",
+  "password": "{{password}}",
+  "email": "",
+}
+
+
+### login 
+POST {{@baseUrl}}/api/login
+{
+  "username": "{{username}}",
+  "password": "{{password}}"
+}
